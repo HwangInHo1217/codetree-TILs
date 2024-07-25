@@ -18,7 +18,7 @@ public class Main {
 
 
         }
-        System.out.println("cnt = " + (e_cnt + cnt));
+        System.out.println(e_cnt + cnt);
     }
 
 }
