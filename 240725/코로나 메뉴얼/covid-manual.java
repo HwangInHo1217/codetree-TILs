@@ -12,10 +12,10 @@ public class Main {
         }
 
         for(int i = 0; i < Temperature.length; i ++){
-            if(Temperature[i] > 37 && State[i] == 'Y')
+            if(Temperature[i] >= 37 && State[i] == 'Y')
                 cnt++;
         }
-        if(cnt > 1)
+        if(cnt >= 2)
             System.out.print("E");
         else
             System.out.print("N");
