@@ -31,7 +31,7 @@ public class Main {
 
         }
         if(cnt == arrB.length)
-            System.out.println("yes");
+            System.out.println("Yes");
         else
             System.out.println("No");
 
