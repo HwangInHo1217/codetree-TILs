@@ -14,20 +14,21 @@ public class Main {
 
             if ( i + cnt > arrA.length){
                 //System.out.print("i = " + i + " : ");
-                //System.out.println("cnt = " + cnt);
-                //System.out.println("break");
+               // System.out.println("cnt = " + cnt);
+               // System.out.println("break");
                 break;
             }
-            cnt = 0;
 
-            if(arrA[i] == arrB[0]){
+
+            if(arrA[i] == arrB[0] && i <= (arrA.length - arrB.length) ){
+                cnt = 0;
                 for(int j = 0; j < arrB.length; j++){
-                    if (arrA[i+j] == arrB[j]){
-                        //System.out.println("i = " + i + " : ");
-                        //System.out.print("arrB = " + arrB[j]);
+                    if (arrA[i+cnt] == arrB[j]){
+                       // System.out.println("i = " + i + " : ");
+                       // System.out.print("arrB = " + arrB[j]);
 
                         cnt++;
-                        //System.out.println(" : cnt = " + cnt);
+                       // System.out.println(" : cnt = " + cnt);
 
                 }
 
@@ -35,10 +36,16 @@ public class Main {
         }
 
         }
-        if(cnt == arrB.length)
+        if(cnt == arrB.length) {
+            //System.out.println("cnt = " + cnt);
             System.out.println("Yes");
+        }
         else
+        {
+           // System.out.println("cnt = " + cnt);
             System.out.println("No");
+        }
+
 
 
 
