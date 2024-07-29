@@ -15,7 +15,7 @@ public class Main {
             if ( i + cnt > arrA.length){
                 //System.out.print("i = " + i + " : ");
                 //System.out.println("cnt = " + cnt);
-                System.out.println("break");
+                //System.out.println("break");
                 break;
             }
             cnt = 0;
