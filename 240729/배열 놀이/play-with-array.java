@@ -44,8 +44,8 @@ public class Main {
                     tmp = j + 1;
                     break;
                 }
-                System.out.println(tmp);
             }
+            System.out.println(tmp);
         }
         public static void queryC(int[] arr, int start, int end){
             for(int k = start; k <= end; k++){
