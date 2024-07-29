@@ -38,11 +38,13 @@ public class Main {
             System.out.println(arr[index]);
         }
         public static void queryB(int[] arr, int findNum){
+            int tmp = 0;
             for(int j = 0; j < arr.length; j++){
                 if(arr[j] == findNum){
-                    System.out.println((j+1));
+                    tmp = j + 1;
                     break;
                 }
+                System.out.println(tmp);
             }
         }
         public static void queryC(int[] arr, int start, int end){
