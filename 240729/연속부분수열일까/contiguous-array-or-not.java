@@ -11,10 +11,15 @@ public class Main {
             arrB[i] = sc.nextInt();
 
         for(int i = 0; i < arrA.length; i++){
-            if ( i + arrB.length > arrA.length){
-                //System.out.println("break");
+
+            if ( i + cnt > arrA.length){
+                //System.out.print("i = " + i + " : ");
+                //System.out.println("cnt = " + cnt);
+                System.out.println("break");
                 break;
             }
+            cnt = 0;
+
             if(arrA[i] == arrB[0]){
                 for(int j = 0; j < arrB.length; j++){
                     if (arrA[i+j] == arrB[j]){
