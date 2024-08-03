@@ -8,7 +8,7 @@ public class Main {
         boolean rst = false;
         int n = 0;
         for(int i = 0; i < input.length(); i++){
-            if(i + find.length() < input.length() && input.substring(i, i + find.length()).equals(find)){
+            if(i + find.length() <= input.length() && input.substring(i, i + find.length()).equals(find)){
                 rst = true;
                 n = i;
                 break;
