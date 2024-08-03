@@ -23,7 +23,7 @@ public class Main {
                 j++;
                 continue;
             }
-            else if(j != ' '){
+            else {
                 System.out.print(a);
                 cnt++;
             }
